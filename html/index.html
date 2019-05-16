@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--引用css样式表-->
+    <link rel="stylesheet" href="../css/index.css">
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".banner")
+            var btn = document.querySelectorAll(".btn")
+            var num = 0
+
+            setInterval(function () {
+                num++
+                if(num==2){
+                    num=0
+                }
+                for(var i=0;i<banner.length;i++){
+                    banner[i].style.display="none";
+                    btn[i].style.background="black";
+                }
+                banner[num].style.display="block";
+                btn[num].style.background="orange";
+            },3000)
+        }
+    </script>
+</head>
+<body>
+<header>
+    <img src="../images/headleft.png" alt="">
+    <img src="../images/headright.jpg" alt="">
+</header>
+<!--导航栏-->
+<div class="box">
+    <div class="con">
+        <div class="left">
+            <a href="" class="active">首页</a>
+            <a href="">国内航空</a>
+            <a href="">国际航空</a>
+            <a href="">民航咨讯</a>
+            <a href="">民航问答</a>
+        </div>
+        <div class="right">
+            <a href="" class="login">登录</a>
+            <a href="">注册</a>
+            <a href="">个人信息</a>
+            <div class="delta"></div><!--三角符号-->
+        </div>
+    </div>
+</div>
+
+<!--热门城市-->
+<div class="city">
+    <span>热门城市:</span>
+    <a href="">深圳</a>
+    <a href="">北京</a>
+    <a href="">上海</a>
+    <a href="">广州</a>
+    <a href="">南京</a>
+    <a href="">天津</a>
+    <a href="">武汉</a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都</a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+</div>
+<div class="wheel-box">
+    <div class="banner banner1"></div>
+    <div class="banner banner2"></div>
+<div class="btn">
+    <div class="btns btn1"></div>
+    <div class="btns btn2"></div>
+</div>
+</div>
+
+<!--热门航线预定-->
+<div class="one">
+    <div class="hangxian">
+        <span>热门航线预定</span>
+    </div>
+    <div class="cities">
+        <a href="" class="nation">全国</a>
+        <a href="">深圳</a>
+        <a href="">北京</a>
+        <a href="">上海</a>
+        <a href="">广州</a>
+        <a href="">武汉</a>
+        <a href="">成都</a>
+        <a href="">海口</a>
+        <a href="">重庆</a>
+        <a href="">沈阳</a>
+    </div>
+</div>
+<!--分割线-->
+<div class="line1"></div>
+<!--航线售卖信息-->
+<div class="fu">
+    <ul class="shoupiao">
+        <li>
+            <div class="out">
+                <div class="in">
+                    <span class="con">海口&nbsp;&nbsp;-->&nbsp;&nbsp;郑州<br>12月16日<br>票价：￥150</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="out">
+                <div class="in">
+                    <span class="con">海口&nbsp;&nbsp;-->&nbsp;&nbsp;长沙<br>10月15日<br>票价：￥110</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="out">
+                <div class="in">
+                    <span class="con">武汉&nbsp;&nbsp;-->&nbsp;&nbsp;神农架<br>5月18日<br>票价：￥117</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="out">
+                <div class="in">
+                    <span class="con">银川&nbsp;&nbsp;-->&nbsp;&nbsp;昆明<br>5月12日<br>票价：￥220</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--水平线分割线  hr/ -->
+</body>
+</html>
